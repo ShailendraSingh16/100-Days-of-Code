@@ -8,13 +8,22 @@ public:
         int j=people.size()-1;
 
         int count=0;
-
+        
         while(i<=j){
-            count++;
-            if(people[i]+people[j]<=limit)
-               i++;
-               j--;
+            if(people[i]+people[j]<=limit){
+                ++i;
+                --j;
+            }
+            else{
+                --j;
+        }
+         count++;
         }
         return count;
     }
 };
+
+/*
+Time Complexity - O(NlogN)
+Space Complexity - O(1)
+*/
