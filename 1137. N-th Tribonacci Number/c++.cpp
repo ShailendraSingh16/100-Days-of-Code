@@ -2,7 +2,7 @@ class Solution {
 public:
     int tribonacci(int n) {
         int t1=0,t2=1,t3=1;
-        int ans;
+        int ans=0;
 
         if(n==0){
             return 0; 
